@@ -1,0 +1,40 @@
+name: Question
+description: Ask a question about the project
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about Project Collaborans? Ask away!
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question category
+      options:
+        - Technical architecture
+        - Governance framework
+        - How to participate
+        - Constitutional convention
+        - Security/safety
+        - Project timeline
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any background that would help us answer?
+    validations:
+      required: false
