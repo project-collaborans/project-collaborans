@@ -1,0 +1,68 @@
+name: Governance Proposal
+description: Propose changes to governance, rules, or constitutional elements
+title: "[Governance] "
+labels: ["governance", "constitutional-convention"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to Project Collaborans governance! 
+        
+        Proposals help shape how the platform operates and what it protects.
+
+  - type: dropdown
+    id: proposal_type
+    attributes:
+      label: Type of proposal
+      options:
+        - Constitutional principle
+        - Governance structure
+        - Safety mechanism
+        - Amendment process
+        - Crisis protocol
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this address?
+      description: What gap, risk, or issue are you trying to solve?
+      placeholder: "Currently the platform lacks..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your proposal
+      description: What specifically are you proposing?
+      placeholder: "I propose that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this the right approach?
+      placeholder: "This would work because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you think about?
+    validations:
+      required: false
+
+  - type: textarea
+    id: impacts
+    attributes:
+      label: Potential impacts
+      description: Who/what would this affect? Any downsides to consider?
+    validations:
+      required: false
