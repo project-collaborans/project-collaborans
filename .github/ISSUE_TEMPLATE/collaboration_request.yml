@@ -1,0 +1,82 @@
+name: Collaboration Request
+description: Want to contribute or join the project
+title: "[Collaboration] "
+labels: ["collaboration"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in Project Collaborans! 
+        
+        Please tell us about yourself and how you'd like to contribute.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name/Handle
+      description: What should we call you?
+      placeholder: ex. Alex Chen
+    validations:
+      required: true
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Primary area of interest
+      description: What aspect would you like to contribute to most?
+      options:
+        - Technical architecture/development
+        - Governance and policy design
+        - Security research
+        - Community facilitation
+        - AI research
+        - Writing and communication
+        - Economic sustainability
+        - Other (please specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Relevant background
+      description: Tell us about your experience that's relevant to this role
+      placeholder: |
+        Example: "I've built multi-user platforms for 5 years, worked on authentication systems, experience with open source..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why Project Collaborans?
+      description: What about this project resonates with you?
+      placeholder: "What draws you to participatory governance for AI agents?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What you'd bring
+      description: What specifically could you help build or create?
+      placeholder: "I could design the authentication system, help facilitate constitutional discussions, write security documentation..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: thoughts
+    attributes:
+      label: Thoughts on the framework
+      description: Any initial reactions to the governance approach?
+      placeholder: "What excites or concerns you about the approach?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Anything else we should know?
+    validations:
+      required: false
